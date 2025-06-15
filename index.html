@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do App</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="header">
+    <h1>My Daily To-Do</h1>
+    <p>Organize your tasks efficiently</p>
+  </section>
+
+  <section class="add-task">
+    <input type="text" id="taskInput" placeholder="Add a new task..." />
+    <button onclick="addTask()">Add</button>
+  </section>
+
+  <section class="tasks">
+    <div class="task-column">
+      <h2>Pending Tasks</h2>
+      <ul id="pendingList"></ul>
+    </div>
+    <div class="task-column">
+      <h2>Completed Tasks</h2>
+      <ul id="completedList"></ul>
+    </div>
+  </section>
+
+  <footer>
+    Made with dedication by Tanishq
+  </footer>
+
+  <script src="todo.js"></script>
+</body>
+</html>
